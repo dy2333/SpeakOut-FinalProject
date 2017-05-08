@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Speak-out with Auth</title>
+</head>
+
+<body>
+
+	<!-- BOOTSTRAP -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- RIOT -->
+				<app></app>
+
+			</div>
+		</div>
+	</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAPS38e8AnG227Bc5iaN7qJxWTYVYExuVo",
+    authDomain: "project-8c47f.firebaseapp.com",
+    databaseURL: "https://project-8c47f.firebaseio.com",
+    projectId: "project-8c47f",
+    storageBucket: "project-8c47f.appspot.com",
+    messagingSenderId: "1071300759421"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<!-- <script src="https://www.gstatic.com/firebasejs/3.7.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZ3RoA-rLJMTdTmssI_krOcsRH7zwpH2Q",
+    authDomain: "speakout-44827.firebaseapp.com",
+    databaseURL: "https://speakout-44827.firebaseio.com",
+    projectId: "speakout-44827",
+    storageBucket: "speakout-44827.appspot.com",
+    messagingSenderId: "666689473247"
+  };
+  firebase.initializeApp(config);
+</script> -->
+
+	<script src="tags/app.tag" type="riot/tag"></script>
+	<script src="tags/home.tag" type="riot/tag"></script>
+	<script src="tags/members.tag" type="riot/tag"></script>
+	<script src="tags/post-editor.tag" type="riot/tag"></script>
+	<script src="tags/comment-editor.tag" type="riot/tag"></script>
+	<!-- <script src="tags/comments-mine.tag" type="riot/tag"></script> -->
+	<!-- <script src="tags/comments-public.tag" type="riot/tag"></script> -->
+	<script src="tags/post-list.tag" type="riot/tag"></script>
+	<script src="tags/post-item.tag" type="riot/tag"></script>
+
+	<script src="https://cdn.jsdelivr.net/riot/3.1/riot+compiler.js"></script>
+
+	<script>
+
+		riot.mount('*');
+
+	</script>
+
+</body>
+
+</html>

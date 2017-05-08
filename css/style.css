@@ -1,0 +1,135 @@
+html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    margin: 30px;
+    padding: 30px;
+    font-size: 2em;
+}
+
+
+#heading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 150px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ae/d8/6f/aed86fc6203c66b20e460d35b6202130.jpg);
+    filter:alpha(opacity=80);
+     opacity:0.8;
+    background-size: cover;
+    font-family: "Book Antiqua", Georgia, serif;
+    font-size:1em;
+    line-height: 2;
+}
+
+
+#post {
+    padding: 50px 50px 0 50px;
+    margin-top: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ae/d8/6f/aed86fc6203c66b20e460d35b6202130.jpg);
+    filter:alpha(opacity=80);
+     opacity:0.8;
+    background-size: cover;
+    font-family: "Book Antiqua", Georgia, serif;
+    font-size: 1em;
+    line-height: 2;
+}
+
+.post {
+    padding: 20px;
+    margin: 10px;
+    font-family: "Book Antiqua", Georgia, serif;
+    font-size: 1em;
+    line-height: 2;
+}
+
+#post h3 {
+    margin: 0;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 1em;
+    font-style: normal;
+    line-height: 2;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+
+.commentbtn p {
+    font-family: "Book Antiqua", Georgia, serif;
+    font-size: 1em;
+}
+
+.content-blocks {
+    position: relative;
+}
+
+.content-block {
+    flex: 0 1 100%;
+    max-width: 600px;
+    padding: 30px;
+    position: relative;
+    color: #000;
+    bottom: 130px;
+
+}
+
+@media (min-width: 850px) {
+    .content-block {
+        margin-left: -350px;
+    }
+}
+
+.content-block:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    mix-blend-mode: overlay;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.content-block h2 {
+    margin: 0;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 2em;
+    font-style: normal;
+    line-height: 1;
+    font-weight: bolder;
+}
+
+.content-block p {
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+
+.content-block--small {
+    position: absolute;
+    margin-left: 0;
+    margin-right: -50px;
+    max-width: 400px;
+    padding-right: 10px;
+    bottom: -100px;
+}
+
+@media (min-width: 850px) {
+    .content-block--small {
+        right: -300%;
+        bottom: -100px;
+    }
+}
+
+.content-block--small p {
+    padding-right: 0;
+}
+.button{
+  margin-right: 0%;
+  margin-bottom:0%;
+}
